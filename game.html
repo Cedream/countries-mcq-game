@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Game</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <main role="main" class="container">
+      <div id="win" style="display:none;">
+        <div class="alert" id="winbox">
+          <span id="textWin"></span> <span id="yourScore"></span> question(s) sur 10 !
+        </div>
+        <input onclick="reload()" class="btn btn-success" value="Retenter sa chance">
+        <input onclick="goToIndex()" class="btn btn-primary" value="Retourner au menu">
+      </div>
+      <div id="jeu">
+      <h1 class="mt-5">Jouons avec la région: <span id="region"></span></h1>
+      <p><strong style="font-size:20px"><span class="questionNumber">1</span>)</strong> A quel pays appartient ce drapeau?</p>
+      <p>Votre score: <span class="yourScore">0</span></p>
+        <p class="lead">
+          <div class="row">
+            <div class=".col-md-9">
+              <img class="img-thumbnail" alt="flag" id="drapeau"/>
+            </div>
+            <div class=".col-md-3" style="margin-left: 35px;margin-top: 40px;">
+              <div class="row">
+                <div class=".col-md-6" style="padding:10px;">
+                  <input class="btn btn-default btn-lg choice" type="submit" id="choice1">
+                  <input class="btn btn-default btn-lg choice" type="submit" id="choice2">
+                </div>
+              </div>
+              <div class="row">
+                <div class=".col-md-6" style="padding:10px;">
+                  <input class="btn btn-default btn-lg choice" type="submit" id="choice3">
+                  <input class="btn btn-default btn-lg choice" type="submit" id="choice4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button style="display:none;" class="btn btn-primary" id="nextQuestion">Question suivante</button>
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Fait avec <strong>&hearts;</strong> par Cédric Thonus (cedream)</span>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/countries.js"></script>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>

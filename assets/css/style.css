@@ -1,0 +1,28 @@
+/*  Cedric Thonus 49739 B112 */
+body{
+    margin:0;
+    padding:0;
+    background:#efefef;
+}
+
+#drapeau{
+    height:200px;
+    width: 300px;
+}
+
+.choice{
+  min-width: 300px;
+  margin-right:5px;
+}
+
+#nextQuestion{
+  float:right;
+}
+
+#yourScore{
+  font-weight:bold;
+}
+
+#win{
+  margin-top: 20px;
+}
